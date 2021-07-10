@@ -1,0 +1,16 @@
+[package]
+name = "gtfs-server"
+version = "0.1.0"
+authors = ["Jarrod Bennett <jarrodbennett159@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = { version = "1.8.1", features = ["full"] }
+reqwest = { version = "0.11.4" }
+bytes = "1.0.1"
+prost = "0.8.0"
+diesel = { version = "1.4.4", features = ["postgres"] }
+dotenv = "0.15.0"
+
+[build-dependencies]
+prost-build = { version = "0.8.0" }
